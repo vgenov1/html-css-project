@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Reset Start */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1d8ee4;
+	font-family: inherit;
+}
+
+:focus {
+	outline: none;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+/* Custom Reset Start */
+
+/* Page Styles */
+.header {
+    height: 50px;
+    background: #ebebeb;
+	margin-bottom: 20px;
+}
+
+.header .logo,
+.header ul {
+    float: left;
+}
+
+.header .logo {
+	color: #000;
+	margin-right: 40px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.header ul li a {
+	line-height: 50px;
+}
+
+.header .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .search {
+	float: right;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.header .search input {
+	width: 200px;
+	display: inline-block;
+	height: 100%;
+	border: 1px solid #c3c3c3;
+	box-sizing: border-box;
+	margin-right: 15px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+.header .btn-search {
+	color: #fff;
+	height: 100%;
+	display: inline-block;
+	background: #1d8ee4;
+	vertical-align: top;
+	padding: 0 15px;
+	cursor: pointer;
+	line-height: 38px;
+}
+
+.main, .footer {
+    width: 1170px;
+    margin: 0 auto;
+}
+.main-top {
+	border-bottom: 1px solid #c5c5c5;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+.main-top .breadcrumb {
+	margin-bottom: 20px;
+}
+
+.main-top .breadcrumb li {
+	display: inline-block;
+	margin-right: 15px;
+
+}
+
+.main-top .breadcrumb li::after {
+	content: "/";
+	padding-left: 15px;
+	color: #cdcdcd;
+}
+
+.main-top .breadcrumb li:last-child::after {
+	content: "";
+}
+
+.main-top .breadcrumb li,
+.main-top .breadcrumb a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.main-top .breadcrumb a:hover {
+	color: #cdcdcd;
+}
+
+.top-images {
+	display: inline-block;
+}
+
+.top-images > img,
+.top-images ul li img {
+	border: 1px solid #c5c5c5;
+	padding: 3px;
+}
+
+.top-images > img {
+	margin-bottom: 10px;
+}
+
+.top-images ul {
+	width: 568px;
+}
+
+.top-images ul li {
+	display: inline-block;
+	width: 127px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+
+.top-images ul li:last-child {
+	margin-right: 0;
+}
+
+.top-images ul li img {
+	width: 127px;
+	box-sizing: border-box;
+}
+
+.top-product-info {
+	display: inline-block;
+	float: right;
+}
+
+h2 {
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.top-product-info p {
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.top-product-info select {
+height: 40px;
+width: 420px;
+margin-bottom: 15px;
+}
+
+.top-product-info input {
+	height: 40px;
+	width: 300px;
+	margin-left: 47px;
+	margin-bottom: 20px;
+}
+.top-product-info button:first-of-type {
+	font-size: 20px;
+	color: white;
+	background-color: #2199e8;
+	height: 40px;
+	width: 420px;
+	border: none;
+	margin-bottom: 20px;
+}
+.top-product-info button {
+	font-size: 10x;
+	color: white;
+	background-color: #777777;
+	height: 35px;
+	width: 139px;
+	border: none;
+	margin-right: -3px;
+}
+
+.main-bottom .tabs ul {
+	width: 1170px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid #c5c5c5;
+}
+
+.main-bottom .tabs ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+.main-bottom .tabs ul li:first-child {
+	background-color: #d9e1e6;
+}
+
+.reviews {
+	box-sizing: border-box;
+	border: 1px solid #c5c5c5;
+
+}
+
+.reviews h3 {
+	font-size: 25px;
+	padding: 15px;
+}
+
+.reviews .userimage {
+display: inline-block;
+border: 1px solid #c5c5c5;
+padding: 3px;
+margin-left: 15px;
+margin-bottom: 15px;
+}
+
+.reviews .comment {
+display: inline-block;
+vertical-align: top;
+margin-left: 15px;
+}
+
+.reviews .comment h4{
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.reviews .reviewinput label{
+margin: 15px;
+font-weight: bold;
+font-size: 15px;
+}
+
+.reviews .reviewinput input {
+margin-left: 15px;
+margin-top: 5px;
+width: 97%;
+height: 40px;
+}
+
+.reviews .reviewinput button {
+margin: 15px;
+margin-bottom: 30px;
+font-size: 15px;
+color: white;
+background-color: #2199e8;
+height: 40px;
+width: 120px;
+border: none;
+}
+
+.footer {
+	margin-top: 15px;
+	border-top: 1px solid #c5c5c5;
+	line-height: 50px;
+}
+.footer .logo {
+    float: left;
+		color: black;
+		margin-right: 15px;
+}
+.footer ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
